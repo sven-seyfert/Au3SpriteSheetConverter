@@ -17,11 +17,11 @@
 
 ## Description
 
-Au3SpriteSheetConverter [...] description [...].
+Au3SpriteSheetConverter converts spritesheet files into separate single files.
 
 ## Features
 
-To be defined [...]
+![demo](./media/screenshots/Au3SpriteSheetConverter.gif)
 
 ## Getting started
 
