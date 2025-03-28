@@ -13,15 +13,24 @@
 ![os](https://img.shields.io/badge/os-windows-yellow.svg?style=flat-square&logo=windows)
 ![editor](https://img.shields.io/badge/editor-VSCode-blueviolet.svg?style=flat-square&logo=visual-studio-code)
 
-[Description](#description) | [Features](#features) | [Getting started](#getting-started) | [Configuration](#configuration) | [FAQ](#faq) | [Contributing](#contributing) | [License](#license) | [Acknowledgements](#acknowledgements)
+[Description](#description) | [Features](#features) | [License](#license) | [Getting started](#getting-started) | [Configuration](#configuration) | [FAQ](#faq) | [Contributing](#contributing) | [Acknowledgements](#acknowledgements)
 
 ## Description
 
 Au3SpriteSheetConverter converts spritesheet files into separate single files.
 
+### 📦 Public Archive
+
+This repository (project) is archived which means it's no longer actively maintained.
+
 ## Features
 
 ![demo](./media/screenshots/Au3SpriteSheetConverter.gif)
+
+## License
+
+Copyright (c) 2021 - 2022 Sven Seyfert (SOLVE-SMART).<br>
+Distributed under the MIT License. See [LICENSE](https://github.com/sven-seyfert/Au3SpriteSheetConverter/blob/main/LICENSE.md) for more information.
 
 ## Getting started
 
@@ -81,11 +90,6 @@ To be defined [...]
 ## Contributing
 
 Just look at [CONTRIBUTING](https://github.com/Sven-Seyfert/Au3SpriteSheetConverter/blob/main/docs/CONTRIBUTING.md), thank you!
-
-## License
-
-Copyright (c) 2021 - 2022 Sven Seyfert (SOLVE-SMART).<br>
-Distributed under the MIT License. See [LICENSE](https://github.com/sven-seyfert/Au3SpriteSheetConverter/blob/main/LICENSE.md) for more information.
 
 ## Acknowledgements
 
