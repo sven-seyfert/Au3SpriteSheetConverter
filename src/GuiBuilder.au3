@@ -11,13 +11,13 @@ Func _CreateGui()
     $cDrawSpeedLabel     = _CreateCustomLabel($aTexts[$eSpeed], $iFive * 3, $aSingleSprite[$eHeight] + ($iFive * 13), ($aGui[$eWidth] - ($iFive * 3)) * 0.95)
     $cDrawSpeedInput     = GUICtrlCreateInput($iDrawDelay, ($iFive * 14), $aSingleSprite[$eHeight] + ($iFive * 14) - 1, ($iFive * 10), Default, $vONLYNUMBERINPUTS)
 
-    $cPreviewButton      = _CreateCustomButton(Chr(33), ($iFive * 3), $aSingleSprite[$eHeight] + ($iFive * 20))
+    $cPreviewButton      = _CreateCustomButton('⭠', ($iFive * 3), $aSingleSprite[$eHeight] + ($iFive * 20))
                            GUICtrlSetTip($iLASTCREATEDCONTROLID, $aTexts[$eButtonHintPrevious])
 
-    $cReloadButton       = _CreateCustomButton(Chr(80), ($iFive * 3) + ($iThirtyTwo * 1) + ($iThree * 1), $aSingleSprite[$eHeight] + ($iFive * 20))
+    $cReloadButton       = _CreateCustomButton('⭮', ($iFive * 3) + ($iThirtyTwo * 1) + ($iThree * 1), $aSingleSprite[$eHeight] + ($iFive * 20))
                            GUICtrlSetTip($iLASTCREATEDCONTROLID, $aTexts[$eButtonHintRerun])
 
-    $cNextButton         = _CreateCustomButton(Chr(34), ($iFive * 3) + ($iThirtyTwo * 2) + ($iThree * 2), $aSingleSprite[$eHeight] + ($iFive * 20))
+    $cNextButton         = _CreateCustomButton('⭢', ($iFive * 3) + ($iThirtyTwo * 2) + ($iThree * 2), $aSingleSprite[$eHeight] + ($iFive * 20))
                             GUICtrlSetTip($iLASTCREATEDCONTROLID, $aTexts[$eButtonHintNext])
 
     $cDefaultColorButton = _CreateCustomColorButton(Chr(83), ($iFive * 3) + ($iThirtyTwo * 3) + ($iThree * 5), $aSingleSprite[$eHeight] + ($iFive * 20), $sDefaultColor)
@@ -26,10 +26,10 @@ Func _CreateGui()
     $cBlackColorButton   = _CreateCustomColorButton(Chr(83), ($iFive * 3) + ($iThirtyTwo * 6) + ($iThree * 8), $aSingleSprite[$eHeight] + ($iFive * 20), $sBlackColor)
     $cWhiteColorButton   = _CreateCustomColorButton(Chr(83), ($iFive * 3) + ($iThirtyTwo * 7) + ($iThree * 9), $aSingleSprite[$eHeight] + ($iFive * 20), $sWhiteColor)
 
-    $cSaveButton         = _CreateCustomButton(Chr(60), ($iFive * 3) + ($iThirtyTwo * 8) + 34, $aSingleSprite[$eHeight] + ($iFive * 20), 'WingDings')
+    $cSaveButton         = _CreateCustomButton('🖫', ($iFive * 3) + ($iThirtyTwo * 8) + 34, $aSingleSprite[$eHeight] + ($iFive * 20), Default, 0)
                            GUICtrlSetTip($iLASTCREATEDCONTROLID, $aTexts[$eButtonHintSave])
 
-    $cExitButton         = _CreateCustomButton(Chr(207), ($aGui[$eWidth] * 0.86), ($iFive * 3), 'WingDings 2', 2)
+    $cExitButton         = _CreateCustomButton('🞪', ($aGui[$eWidth] * 0.86), ($iFive * 3), Default, 2)
 
     $cPicture            = GUICtrlCreatePic('', ($iFive * 3), ($iFive * 3), $aSingleSprite[$eWidth], $aSingleSprite[$eHeight])
 
@@ -55,7 +55,7 @@ Func _CreateCustomLabel($sText, $iLeft, $iTop, $iWidth = 32, $iHeight = 32)
     Return GUICtrlCreateLabel($sText, $iLeft + 7, $iTop + 8, $iWidth - 7, $iHeight - 8)
 EndFunc
 
-Func _CreateCustomButton($sText, $iLeft, $iTop, $sFont = 'WingDings 3', $iYOffset = 0, $iWidth = 32, $iHeight = 32)
+Func _CreateCustomButton($sText, $iLeft, $iTop, $sFont = Default, $iYOffset = 0, $iWidth = 32, $iHeight = 32)
     GUICtrlCreateLabel('', $iLeft, $iTop, $iWidth, 1)
     GUICtrlSetBkColor($iLASTCREATEDCONTROLID, $vBORDERCOLOR)
 
