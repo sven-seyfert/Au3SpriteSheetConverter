@@ -84,7 +84,8 @@ Just look at [CONTRIBUTING](https://github.com/Sven-Seyfert/Au3SpriteSheetConver
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/Sven-Seyfert/Au3SpriteSheetConverter/blob/main/LICENSE.md) for more information.
+Copyright (c) 2021 - 2022 Sven Seyfert (SOLVE-SMART).<br>
+Distributed under the MIT License. See [LICENSE](https://github.com/sven-seyfert/Au3SpriteSheetConverter/blob/main/LICENSE.md) for more information.
 
 ## Acknowledgements
 
